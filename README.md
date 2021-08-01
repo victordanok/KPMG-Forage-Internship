@@ -23,10 +23,19 @@ The three datasets are to be merged into one for exploratory data analysis and m
 6. Scikit-learn Library
 
 ## Model Performance
-1. Logistic Regression has an overall accuracy of 0.57.
-2. Bagging classifier has an overall accuracy of 0.98.
-3. Random Forest classifier(n_estimators = 850) with has an overall accuracy of 0.99, which is the highest performing model.
-4. Naive Bayes has an overall accuracy of 0.57.
-5. Support Vector Machine has an overall accuracy of 0.51.
+1. SMOTE Oversampling
+<ul>
+  <li> Logistic Regression has an overall accuracy of 0.57. </li>
+  <li> Bagging classifier has an overall accuracy of 0.98 but the bias is high in the prediction. </li>
+  <li> Naive Bayes has an overall accuracy of 0.57.</li>
+  <li> Random Forest classifier(n_estimators = 850) with has an overall accuracy of 0.99, but also produces a high level of bias </li>
+  <li> Support Vector Machine has an overall accuracy of 0.51. </li> </ul>
+
+2.  Using Balanced Bagging Classifier
+<ul>
+  <li> BalancedBagging classifier and decision tree has an accuracy of 0.62 but there was some bias in its predictions. </li>
+  <li> BalancedBagging classifier and random forest has an accuracy of 0.79 and almost no bias. </li> </ul>
+
+The prediction model will be based on BalancedBagging Classifier and Random Forest
 
 ## API Development
