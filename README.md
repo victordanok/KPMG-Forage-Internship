@@ -3,14 +3,15 @@
 ## Overview
 Sprocket Central Pty Ltd needs help with its customer and transactions data. 
 The organisation has a large dataset relating to its customers, but their team is unsure how to effectively analyse it to help optimise its marketing strategy.
-<br> Using customer segmentation RR
+<br>The aim of this is to segment the customers so the company knows which customers to target for marketing
 
 ## Data
 1. Customer Demographic 
 2. Customer Addresses
 3. Transactions data in the past 3 months
-
 The three datasets are to be merged into one for exploratory data analysis and model development.
+
+A new customers list was also provided for customer segmentation
 
 ## Libraries and Packages Used
 1. Python
