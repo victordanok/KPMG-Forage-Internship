@@ -3,7 +3,7 @@
 ## Overview
 Sprocket Central Pty Ltd needs help with its customer and transactions data. 
 The organisation has a large dataset relating to its customers, but their team is unsure how to effectively analyse it to help optimise its marketing strategy.
-<br> Build a model to predict which customers they should target
+<br> Using customer segmentation RR
 
 ## Data
 1. Customer Demographic 
@@ -11,8 +11,6 @@ The organisation has a large dataset relating to its customers, but their team i
 3. Transactions data in the past 3 months
 
 The three datasets are to be merged into one for exploratory data analysis and model development.
-<br> The dataset is highly imbalanced as the cancelled orders are less than ten percent of the entire dataset. 
-<br> Hence, SMOTE oversampling will be used to balance the dataset.
 
 ## Libraries and Packages Used
 1. Python
@@ -20,22 +18,11 @@ The three datasets are to be merged into one for exploratory data analysis and m
 3. Pandas Library
 4. Matplotlib Library
 5. Seaborn Library
-6. Scikit-learn Library
 
-## Model Performance
-1. SMOTE Oversampling
-<ul>
-  <li> Logistic Regression has an overall accuracy of 0.57. </li>
-  <li> Bagging classifier has an overall accuracy of 0.98 but the bias is high in the prediction. </li>
-  <li> Naive Bayes has an overall accuracy of 0.57.</li>
-  <li> Random Forest classifier(n_estimators = 850) with has an overall accuracy of 0.99, but also produces a high level of bias </li>
-  <li> Support Vector Machine has an overall accuracy of 0.51. </li> </ul>
+## Older Customers
+Using Recency - R, Frequency - F, Money - M, RFM-value, the customer levels were segmented according to their patronage to the organization, 
+so in the future, the company would know which customers to focus their marketing strategies.
 
-2.  Using Balanced Bagging Classifier
-<ul>
-  <li> BalancedBagging classifier and decision tree has an accuracy of 0.62 but there was some bias in its predictions. </li>
-  <li> BalancedBagging classifier and random forest has an accuracy of 0.79 and almost no bias. </li> </ul>
-
-The prediction model will be based on BalancedBagging Classifier and Random Forest
-
-## API Development
+## New Customers
+Using the same RFM - value, customers were also segmented into the levels of their patronage.
+<br> due to this being a new customers list, there was no Recency score. Hence, their monetary value and their frequency of visits were used to calculate the RFM value and this assisted in grouping the customers into Platinum, Gold, Silver and Bronze Levels.
